@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+    <h2>ToDoList</h2>
+    <div class="container">
+      <p>
+        <label for="new-task">Add Item</label><input id="new-task" type="text"><button><img src="http://www.clker.com/cliparts/Z/r/I/W/D/j/add-button-png-md.png" width="40" height="20"></button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="todo">
+        <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit"><img src="https://image.flaticon.com/icons/svg/61/61456.svg" width="10" height="10"></button><button class="delete"><img src="https://www.km-shop.ru/images/delete_icon.png" width="10" height="10"></button></li>
+        <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit"><img src="https://image.flaticon.com/icons/svg/61/61456.svg" width="10" height="10"></button><button class="delete"><img src="https://www.km-shop.ru/images/delete_icon.png" width="10" height="10"></button></li>
+        
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed">
+        <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit"><img src="https://image.flaticon.com/icons/svg/61/61456.svg" width="10" height="10"></button><button class="delete"><img src="https://www.km-shop.ru/images/delete_icon.png" width='10' height="10"></button></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
