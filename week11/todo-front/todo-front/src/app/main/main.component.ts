@@ -17,16 +17,21 @@ export class MainComponent implements OnInit, OnDestroy {
   constructor(private provider: ProviderService) { }
 
   ngOnInit() {
-  	this.provider.getTaskLists().then(res => {
+  	
+  }
+
+  getTaskList(): void{
+    this.provider.getTaskLists().then(res => {
   		this.task_lists = res
   		setTimeout(() => {
   			this.loading = true  	
-  		}, 2000)
+  		}, 1500)
   	})
+
   }
 
-  getTasks(task_list: ITaskList){
-  	this.provider.getTasks(task_list).then(res => {
+  getTasks(id: ITaskList){
+  	this.provider.getTasks(id).then(res => {
   		this.tasks = res
   	})
   }
